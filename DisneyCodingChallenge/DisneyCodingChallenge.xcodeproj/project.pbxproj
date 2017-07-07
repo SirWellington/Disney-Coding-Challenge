@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DE06EE921F104E2F006CC737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EE911F104E2F006CC737 /* AppDelegate.swift */; };
-		DE06EE941F104E2F006CC737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EE931F104E2F006CC737 /* ViewController.swift */; };
 		DE06EE971F104E2F006CC737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE06EE951F104E2F006CC737 /* Main.storyboard */; };
 		DE06EE991F104E2F006CC737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE06EE981F104E2F006CC737 /* Assets.xcassets */; };
 		DE06EE9C1F104E2F006CC737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE06EE9A1F104E2F006CC737 /* LaunchScreen.storyboard */; };
 		DE06EEA71F104E2F006CC737 /* DisneyCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEA61F104E2F006CC737 /* DisneyCodingChallengeTests.swift */; };
+		DE06EEB21F104FA9006CC737 /* PugCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEB11F104FA9006CC737 /* PugCollectionViewController.swift */; };
+		DE06EEB61F104FC1006CC737 /* PugCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEB51F104FC1006CC737 /* PugCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		DE06EE8E1F104E2F006CC737 /* DisneyCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisneyCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE06EE911F104E2F006CC737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE06EE931F104E2F006CC737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE06EE961F104E2F006CC737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE06EE981F104E2F006CC737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE06EE9B1F104E2F006CC737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		DE06EEA21F104E2F006CC737 /* DisneyCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisneyCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE06EEA61F104E2F006CC737 /* DisneyCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCodingChallengeTests.swift; sourceTree = "<group>"; };
 		DE06EEA81F104E2F006CC737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE06EEB11F104FA9006CC737 /* PugCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PugCollectionViewController.swift; sourceTree = "<group>"; };
+		DE06EEB51F104FC1006CC737 /* PugCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PugCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,10 @@
 		DE06EE901F104E2F006CC737 /* DisneyCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				DE06EEB71F104FE9006CC737 /* Data Models */,
+				DE06EEB41F104FB7006CC737 /* Cells */,
+				DE06EEB31F104FAC006CC737 /* View Controllers */,
 				DE06EE911F104E2F006CC737 /* AppDelegate.swift */,
-				DE06EE931F104E2F006CC737 /* ViewController.swift */,
 				DE06EE951F104E2F006CC737 /* Main.storyboard */,
 				DE06EE981F104E2F006CC737 /* Assets.xcassets */,
 				DE06EE9A1F104E2F006CC737 /* LaunchScreen.storyboard */,
@@ -94,6 +98,29 @@
 				DE06EEA81F104E2F006CC737 /* Info.plist */,
 			);
 			path = DisneyCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		DE06EEB31F104FAC006CC737 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE06EEB11F104FA9006CC737 /* PugCollectionViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DE06EEB41F104FB7006CC737 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE06EEB51F104FC1006CC737 /* PugCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		DE06EEB71F104FE9006CC737 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE06EE941F104E2F006CC737 /* ViewController.swift in Sources */,
+				DE06EEB61F104FC1006CC737 /* PugCell.swift in Sources */,
 				DE06EE921F104E2F006CC737 /* AppDelegate.swift in Sources */,
+				DE06EEB21F104FA9006CC737 /* PugCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
