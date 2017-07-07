@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE06EE921F104E2F006CC737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EE911F104E2F006CC737 /* AppDelegate.swift */; };
+		DE06EE941F104E2F006CC737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EE931F104E2F006CC737 /* ViewController.swift */; };
+		DE06EE971F104E2F006CC737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE06EE951F104E2F006CC737 /* Main.storyboard */; };
+		DE06EE991F104E2F006CC737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE06EE981F104E2F006CC737 /* Assets.xcassets */; };
+		DE06EE9C1F104E2F006CC737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE06EE9A1F104E2F006CC737 /* LaunchScreen.storyboard */; };
+		DE06EEA71F104E2F006CC737 /* DisneyCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEA61F104E2F006CC737 /* DisneyCodingChallengeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE06EEA31F104E2F006CC737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE06EE861F104E2F006CC737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE06EE8D1F104E2F006CC737;
+			remoteInfo = DisneyCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE06EE8E1F104E2F006CC737 /* DisneyCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisneyCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE06EE911F104E2F006CC737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE06EE931F104E2F006CC737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE06EE961F104E2F006CC737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE06EE981F104E2F006CC737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE06EE9B1F104E2F006CC737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE06EE9D1F104E2F006CC737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE06EEA21F104E2F006CC737 /* DisneyCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisneyCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE06EEA61F104E2F006CC737 /* DisneyCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCodingChallengeTests.swift; sourceTree = "<group>"; };
+		DE06EEA81F104E2F006CC737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE06EE8B1F104E2F006CC737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE06EE9F1F104E2F006CC737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE06EE851F104E2F006CC737 = {
+			isa = PBXGroup;
+			children = (
+				DE06EE901F104E2F006CC737 /* DisneyCodingChallenge */,
+				DE06EEA51F104E2F006CC737 /* DisneyCodingChallengeTests */,
+				DE06EE8F1F104E2F006CC737 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE06EE8F1F104E2F006CC737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE06EE8E1F104E2F006CC737 /* DisneyCodingChallenge.app */,
+				DE06EEA21F104E2F006CC737 /* DisneyCodingChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE06EE901F104E2F006CC737 /* DisneyCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				DE06EE911F104E2F006CC737 /* AppDelegate.swift */,
+				DE06EE931F104E2F006CC737 /* ViewController.swift */,
+				DE06EE951F104E2F006CC737 /* Main.storyboard */,
+				DE06EE981F104E2F006CC737 /* Assets.xcassets */,
+				DE06EE9A1F104E2F006CC737 /* LaunchScreen.storyboard */,
+				DE06EE9D1F104E2F006CC737 /* Info.plist */,
+			);
+			path = DisneyCodingChallenge;
+			sourceTree = "<group>";
+		};
+		DE06EEA51F104E2F006CC737 /* DisneyCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE06EEA61F104E2F006CC737 /* DisneyCodingChallengeTests.swift */,
+				DE06EEA81F104E2F006CC737 /* Info.plist */,
+			);
+			path = DisneyCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE06EE8D1F104E2F006CC737 /* DisneyCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE06EEAB1F104E2F006CC737 /* Build configuration list for PBXNativeTarget "DisneyCodingChallenge" */;
+			buildPhases = (
+				DE06EE8A1F104E2F006CC737 /* Sources */,
+				DE06EE8B1F104E2F006CC737 /* Frameworks */,
+				DE06EE8C1F104E2F006CC737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DisneyCodingChallenge;
+			productName = DisneyCodingChallenge;
+			productReference = DE06EE8E1F104E2F006CC737 /* DisneyCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE06EEA11F104E2F006CC737 /* DisneyCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE06EEAE1F104E2F006CC737 /* Build configuration list for PBXNativeTarget "DisneyCodingChallengeTests" */;
+			buildPhases = (
+				DE06EE9E1F104E2F006CC737 /* Sources */,
+				DE06EE9F1F104E2F006CC737 /* Frameworks */,
+				DE06EEA01F104E2F006CC737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE06EEA41F104E2F006CC737 /* PBXTargetDependency */,
+			);
+			name = DisneyCodingChallengeTests;
+			productName = DisneyCodingChallengeTests;
+			productReference = DE06EEA21F104E2F006CC737 /* DisneyCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE06EE861F104E2F006CC737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Disney, Inc.";
+				TargetAttributes = {
+					DE06EE8D1F104E2F006CC737 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					DE06EEA11F104E2F006CC737 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DE06EE8D1F104E2F006CC737;
+					};
+				};
+			};
+			buildConfigurationList = DE06EE891F104E2F006CC737 /* Build configuration list for PBXProject "DisneyCodingChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE06EE851F104E2F006CC737;
+			productRefGroup = DE06EE8F1F104E2F006CC737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE06EE8D1F104E2F006CC737 /* DisneyCodingChallenge */,
+				DE06EEA11F104E2F006CC737 /* DisneyCodingChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE06EE8C1F104E2F006CC737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE06EE9C1F104E2F006CC737 /* LaunchScreen.storyboard in Resources */,
+				DE06EE991F104E2F006CC737 /* Assets.xcassets in Resources */,
+				DE06EE971F104E2F006CC737 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE06EEA01F104E2F006CC737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE06EE8A1F104E2F006CC737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE06EE941F104E2F006CC737 /* ViewController.swift in Sources */,
+				DE06EE921F104E2F006CC737 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE06EE9E1F104E2F006CC737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE06EEA71F104E2F006CC737 /* DisneyCodingChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE06EEA41F104E2F006CC737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE06EE8D1F104E2F006CC737 /* DisneyCodingChallenge */;
+			targetProxy = DE06EEA31F104E2F006CC737 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE06EE951F104E2F006CC737 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE06EE961F104E2F006CC737 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE06EE9A1F104E2F006CC737 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE06EE9B1F104E2F006CC737 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE06EEA91F104E2F006CC737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE06EEAA1F104E2F006CC737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE06EEAC1F104E2F006CC737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DisneyCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.disney.DisneyCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DE06EEAD1F104E2F006CC737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DisneyCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.disney.DisneyCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DE06EEAF1F104E2F006CC737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DisneyCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.disney.DisneyCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisneyCodingChallenge.app/DisneyCodingChallenge";
+			};
+			name = Debug;
+		};
+		DE06EEB01F104E2F006CC737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DisneyCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.disney.DisneyCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisneyCodingChallenge.app/DisneyCodingChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE06EE891F104E2F006CC737 /* Build configuration list for PBXProject "DisneyCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE06EEA91F104E2F006CC737 /* Debug */,
+				DE06EEAA1F104E2F006CC737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE06EEAB1F104E2F006CC737 /* Build configuration list for PBXNativeTarget "DisneyCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE06EEAC1F104E2F006CC737 /* Debug */,
+				DE06EEAD1F104E2F006CC737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DE06EEAE1F104E2F006CC737 /* Build configuration list for PBXNativeTarget "DisneyCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE06EEAF1F104E2F006CC737 /* Debug */,
+				DE06EEB01F104E2F006CC737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE06EE861F104E2F006CC737 /* Project object */;
+}
