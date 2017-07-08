@@ -57,9 +57,7 @@ class PugMeAPI {
                             .map(self.replaceHTTPwithHTTPS)
                             .map(self.stripNumberDomain)
                             .filter {$0.endsWith(suffix: ".jpg") }
-                            .map{ URL(string: $0) }
-                            .filter { $0 != nil }
-                            .map { $0!}
+                            .flatMap{ URL(string: $0) }
             
             LOG.info("Finished loading \(urls.count)/\(pugUrls.count) pugs from API")
             
@@ -73,7 +71,6 @@ class PugMeAPI {
     
     
     static func stripNumberDomain(url: String) -> String {
-        //http://27.media.tumblr.com/tumblr_lit0fgki1Z1qfh1tao1_500.jpg
         
         let pattern = "https://\\d{2}\\."
         let with = "https://"
