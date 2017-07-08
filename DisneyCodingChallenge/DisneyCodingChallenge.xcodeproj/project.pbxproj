@@ -14,6 +14,9 @@
 		DE06EEA71F104E2F006CC737 /* DisneyCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEA61F104E2F006CC737 /* DisneyCodingChallengeTests.swift */; };
 		DE06EEB21F104FA9006CC737 /* PugCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEB11F104FA9006CC737 /* PugCollectionViewController.swift */; };
 		DE06EEB61F104FC1006CC737 /* PugCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEB51F104FC1006CC737 /* PugCell.swift */; };
+		DE06EEBA1F105114006CC737 /* PugMeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEB91F105114006CC737 /* PugMeAPI.swift */; };
+		DE06EEBD1F105255006CC737 /* Archeota.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEBC1F105255006CC737 /* Archeota.swift */; };
+		DE06EEBF1F105370006CC737 /* PugMeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06EEBE1F105370006CC737 /* PugMeAPITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		DE06EEA81F104E2F006CC737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE06EEB11F104FA9006CC737 /* PugCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PugCollectionViewController.swift; sourceTree = "<group>"; };
 		DE06EEB51F104FC1006CC737 /* PugCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PugCell.swift; sourceTree = "<group>"; };
+		DE06EEB91F105114006CC737 /* PugMeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PugMeAPI.swift; sourceTree = "<group>"; };
+		DE06EEBC1F105255006CC737 /* Archeota.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archeota.swift; sourceTree = "<group>"; };
+		DE06EEBE1F105370006CC737 /* PugMeAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PugMeAPITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,14 +85,16 @@
 		DE06EE901F104E2F006CC737 /* DisneyCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				DE06EEB71F104FE9006CC737 /* Data Models */,
+				DE06EEBB1F105249006CC737 /* Libraries */,
+				DE06EEB81F10509E006CC737 /* API */,
 				DE06EEB41F104FB7006CC737 /* Cells */,
+				DE06EEB71F104FE9006CC737 /* Data Models */,
 				DE06EEB31F104FAC006CC737 /* View Controllers */,
+				DE06EE9D1F104E2F006CC737 /* Info.plist */,
 				DE06EE911F104E2F006CC737 /* AppDelegate.swift */,
-				DE06EE951F104E2F006CC737 /* Main.storyboard */,
 				DE06EE981F104E2F006CC737 /* Assets.xcassets */,
 				DE06EE9A1F104E2F006CC737 /* LaunchScreen.storyboard */,
-				DE06EE9D1F104E2F006CC737 /* Info.plist */,
+				DE06EE951F104E2F006CC737 /* Main.storyboard */,
 			);
 			path = DisneyCodingChallenge;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 			children = (
 				DE06EEA61F104E2F006CC737 /* DisneyCodingChallengeTests.swift */,
 				DE06EEA81F104E2F006CC737 /* Info.plist */,
+				DE06EEBE1F105370006CC737 /* PugMeAPITests.swift */,
 			);
 			path = DisneyCodingChallengeTests;
 			sourceTree = "<group>";
@@ -121,6 +130,22 @@
 			children = (
 			);
 			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		DE06EEB81F10509E006CC737 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DE06EEB91F105114006CC737 /* PugMeAPI.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		DE06EEBB1F105249006CC737 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DE06EEBC1F105255006CC737 /* Archeota.swift */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE06EEB61F104FC1006CC737 /* PugCell.swift in Sources */,
+				DE06EEBD1F105255006CC737 /* Archeota.swift in Sources */,
+				DE06EEBA1F105114006CC737 /* PugMeAPI.swift in Sources */,
 				DE06EE921F104E2F006CC737 /* AppDelegate.swift in Sources */,
 				DE06EEB21F104FA9006CC737 /* PugCollectionViewController.swift in Sources */,
 			);
@@ -237,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE06EEA71F104E2F006CC737 /* DisneyCodingChallengeTests.swift in Sources */,
+				DE06EEBF1F105370006CC737 /* PugMeAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
