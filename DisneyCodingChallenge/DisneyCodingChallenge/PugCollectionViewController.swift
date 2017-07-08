@@ -42,7 +42,6 @@ fileprivate extension PugCollectionViewController {
             
             guard let `self` = self else { return }
         
-            
             self.main.addOperation {
                 
                 defer { self.hideIndicator() }
@@ -58,7 +57,6 @@ fileprivate extension PugCollectionViewController {
     }
     
     func showIndicator() {
-        
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }
     
@@ -178,7 +176,7 @@ extension PugCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width: CGFloat = (self.view.frame.size.width / 2) - 10
+        let width: CGFloat = (self.view.frame.size.width / 2) - 5
         return CGSize(width: width, height: width)
 
     }
