@@ -35,4 +35,19 @@ class PugMeAPITests: XCTestCase {
         let result = PugMeAPI.stripNumber(url: url)
         XCTAssertEqual(result, expected)
     }
+    
+    func testLoadingData() {
+        
+        let first = URL(string: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Pug_portrait.jpg")!
+        let second = URL(string: "https://media.tumblr.com/tumblr_lsvcpxVBgd1qzgqodo1_500.jpg")!
+        
+        var data = try! Data(contentsOf: first)
+        
+        do {
+            data = try Data(contentsOf: second)
+        } catch let ex {
+            LOG.error("Failed to load URL \(second) | \(ex)")
+        }
+        
+    }
 }

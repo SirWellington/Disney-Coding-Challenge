@@ -55,12 +55,13 @@ class PugMeAPI {
             let urls = pugUrls
                             .map{ "\($0)" }
                             .filter{ $0.notEmpty }
+                            .map(self.replaceHTTPwithHTTPS)
                             .map(self.stripNumber)
                             .map{ URL(string: $0) }
-                            .filter { $0 == nil }
-                            .map { $0!!}
+                            .filter { $0 != nil }
+                            .map { $0!}
             
-            LOG.info("Finished loading \(urls.count) pugs from API")
+            LOG.info("Finished loading \(urls.count)/\(pugUrls.count) pugs from API")
             
             callback(urls)
         
@@ -74,7 +75,8 @@ class PugMeAPI {
     static func stripNumber(url: String) -> String {
         //http://27.media.tumblr.com/tumblr_lit0fgki1Z1qfh1tao1_500.jpg
         
-        let pattern = "http[s]?://\\d{2}\\."
+        let pattern = "https://\\d{2}\\."
+        let with = "https://"
         
         guard let regex = try? NSRegularExpression(pattern: pattern, options: .caseInsensitive) else {
             LOG.error("Failed to create regex from pattern \(pattern)")
@@ -83,8 +85,24 @@ class PugMeAPI {
         
         let range =  NSRange(location: 0, length: url.characters.count)
         
-        let cleaned = regex.stringByReplacingMatches(in: url, options: .withTransparentBounds, range:range, withTemplate: "http://")
+        let cleaned = regex.stringByReplacingMatches(in: url, options: .withTransparentBounds, range:range, withTemplate: with)
         
+        return cleaned
+    }
+    
+    static func replaceHTTPwithHTTPS(url: String) -> String {
+        
+        let pattern = "http://(.*)"
+        let with = "https://$1"
+        
+        guard let regex = try? NSRegularExpression(pattern: pattern, options: .caseInsensitive) else {
+            LOG.error("Failed to create regex from \(pattern)")
+            return url
+        }
+        
+        let range = NSRange(location: 0, length: url.characters.count)
+        
+        let cleaned = regex.stringByReplacingMatches(in: url, options: .withTransparentBounds, range: range, withTemplate: with)
         return cleaned
     }
 }
