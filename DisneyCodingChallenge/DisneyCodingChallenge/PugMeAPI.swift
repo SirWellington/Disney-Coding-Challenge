@@ -30,7 +30,6 @@ class PugMeAPI {
                 return
             }
             
-            
             guard let data = data else {
                 LOG.error("Failed to retrieve data from URK: \(url)")
                 endPrematurely()
@@ -56,7 +55,7 @@ class PugMeAPI {
                             .map{ "\($0)" }
                             .filter{ $0.notEmpty }
                             .map(self.replaceHTTPwithHTTPS)
-                            .map(self.stripNumber)
+                            .map(self.stripNumberDomain)
                             .filter {$0.endsWith(suffix: ".jpg") }
                             .map{ URL(string: $0) }
                             .filter { $0 != nil }
@@ -73,7 +72,7 @@ class PugMeAPI {
     }
     
     
-    static func stripNumber(url: String) -> String {
+    static func stripNumberDomain(url: String) -> String {
         //http://27.media.tumblr.com/tumblr_lit0fgki1Z1qfh1tao1_500.jpg
         
         let pattern = "https://\\d{2}\\."

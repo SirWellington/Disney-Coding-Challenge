@@ -29,10 +29,10 @@ class PugMeAPITests: XCTestCase {
     
     func testStripNumber() {
         
-        let url = "http://27.media.tumblr.com/tumblr_lit0fgki1Z1qfh1tao1_500.jpg"
-        let expected = "http://media.tumblr.com/tumblr_lit0fgki1Z1qfh1tao1_500.jpg"
+        let url = "https://27.media.tumblr.com/tumblr_lit0fgki1Z1qfh1tao1_500.jpg"
+        let expected = "https://media.tumblr.com/tumblr_lit0fgki1Z1qfh1tao1_500.jpg"
         
-        let result = PugMeAPI.stripNumber(url: url)
+        let result = PugMeAPI.stripNumberDomain(url: url)
         XCTAssertEqual(result, expected)
     }
     
