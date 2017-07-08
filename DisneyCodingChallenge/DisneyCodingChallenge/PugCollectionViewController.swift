@@ -82,7 +82,6 @@ extension PugCollectionViewController {
                 self.images += pugs
                 
                 self.collectionView?.insertItems(at: newIndexes)
-                
             }
         }
     }
@@ -110,7 +109,7 @@ extension PugCollectionViewController {
     }
 }
 
-//MARK: Collection View Data Source Methods
+//MARK: Loading Pug Cells
 extension PugCollectionViewController {
     
     private var emptyCell: UICollectionViewCell {
@@ -214,7 +213,7 @@ extension PugCollectionViewController: UICollectionViewDelegateFlowLayout {
     
 }
 
-//MARK: On scrolling ended
+//MARK: Scrolling Events
 extension PugCollectionViewController {
     
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
