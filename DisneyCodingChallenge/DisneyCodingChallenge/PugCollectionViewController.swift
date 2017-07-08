@@ -47,8 +47,11 @@ fileprivate extension PugCollectionViewController {
                 
                 defer { self.hideIndicator() }
                 
+                let newIndexes = self.createNewIndexesToInsertBasedOn(newPugs: pugs)
+                
                 self.images += pugs
-                self.collectionView?.reloadData()
+                
+                self.collectionView?.insertItems(at: newIndexes)
                 
             }
         }
@@ -61,6 +64,20 @@ fileprivate extension PugCollectionViewController {
     
     func hideIndicator() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+    
+    func createNewIndexesToInsertBasedOn(newPugs: [URL]) -> [IndexPath] {
+        
+        var currentIndex = self.images.count
+        
+        let newIndexes: [IndexPath] = newPugs.map{ _ in
+            
+            let path = IndexPath(row: currentIndex, section: 0)
+            currentIndex += 1
+            return path
+        }
+        
+        return newIndexes
     }
 }
 
@@ -141,6 +158,19 @@ extension PugCollectionViewController: UICollectionViewDelegateFlowLayout {
         let width: CGFloat = (self.view.frame.size.width / 2) - 10
         return CGSize(width: width, height: width)
 
+    }
+    
+}
+
+//MARK: On scrolling ended
+extension PugCollectionViewController {
+    
+    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        if scrollView.atTheBottom {
+            LOG.info("Loading new pugs since scrolled to bottom")
+            self.loadPugs()
+        }
     }
     
 }
