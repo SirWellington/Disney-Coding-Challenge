@@ -114,6 +114,7 @@ extension PugCollectionViewController {
         let url = images[row]
         
         goLoadImageIntoCell(url: url, cell: pugCell, at: indexPath)
+        addLongTapGestureTo(cell: pugCell)
         
         return pugCell
     }
@@ -145,6 +146,28 @@ extension PugCollectionViewController {
                 }
                 
                 UIView.transition(with: cell.pugPhoto, duration: 0.7, options: .transitionCrossDissolve, animations: animations, completion: nil)
+            }
+        }
+    }
+    
+    private func addLongTapGestureTo(cell: PugCell) {
+        
+        let gesture = UILongPressGestureRecognizer(target: self, action: #selector(copyImageToClipboard))
+        cell.addGestureRecognizer(gesture)
+    }
+    
+    func copyImageToClipboard(gestureReconizer: UILongPressGestureRecognizer) {
+        
+        guard let collectionView = collectionView else { return }
+        
+        let locationOnScreen = gestureReconizer.location(in: collectionView)
+        guard let indexPath = collectionView.indexPathForItem(at: locationOnScreen) else { return }
+        
+        if let cell = collectionView.cellForItem(at: indexPath) as? PugCell {
+            
+            if let image = cell.pugPhoto?.image {
+                
+                UIPasteboard.general.image = image
             }
         }
     }
