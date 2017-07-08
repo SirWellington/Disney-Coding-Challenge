@@ -23,16 +23,43 @@ class PugCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupPullDownToRefresh()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
         loadPugs()
     }
+    
+    private func setupPullDownToRefresh() {
+        
+        let refresh = UIRefreshControl()
+        refresh.tintColor = UIColor.black
+        refresh.addTarget(self, action: #selector(reloadAllPugs), for: .valueChanged)
+        
+        self.collectionView?.refreshControl = refresh
+    }
 }
 
 //MARK: Loading Data
-fileprivate extension PugCollectionViewController {
+extension PugCollectionViewController {
+    
+    func reloadAllPugs() {
+        
+        showIndicator()
+        
+        PugMeAPI.loadPugs { [weak self] pugs in
+            
+            defer {
+                self?.hideIndicator()
+                self?.collectionView?.refreshControl?.endRefreshing()
+            }
+            
+            self?.images = pugs
+            self?.collectionView?.reloadData()
+        }
+    }
     
     func loadPugs() {
         
@@ -44,7 +71,10 @@ fileprivate extension PugCollectionViewController {
         
             self.main.addOperation {
                 
-                defer { self.hideIndicator() }
+                defer {
+                    self.hideIndicator()
+                    self.collectionView?.refreshControl?.endRefreshing()
+                }
                 
                 let newIndexes = self.createNewIndexesToInsertBasedOn(newPugs: pugs)
                 
@@ -176,7 +206,7 @@ extension PugCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width: CGFloat = (self.view.frame.size.width / 2) - 5
+        let width: CGFloat = (self.view.frame.size.width / 2) - 4
         return CGSize(width: width, height: width)
 
     }
