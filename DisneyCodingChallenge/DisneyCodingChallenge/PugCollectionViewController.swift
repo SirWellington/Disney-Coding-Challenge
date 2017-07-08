@@ -28,6 +28,7 @@ class PugCollectionViewController: UICollectionViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         loadPugs()
     }
