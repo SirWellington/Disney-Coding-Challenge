@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gJo-95-G7v">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PugCell" id="gJo-95-G7v" customClass="PugCell" customModule="DisneyCodingChallenge" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -42,6 +42,9 @@
                                     <constraint firstAttribute="bottom" secondItem="IcD-fH-3FB" secondAttribute="bottom" id="w1D-yf-nhD"/>
                                     <constraint firstAttribute="trailing" secondItem="IcD-fH-3FB" secondAttribute="trailing" id="xiN-Q1-a1g"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="pugPhoto" destination="IcD-fH-3FB" id="whb-zw-eGx"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

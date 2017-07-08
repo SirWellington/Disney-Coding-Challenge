@@ -11,5 +11,6 @@ import UIKit
 
 class PugCell: UICollectionViewCell {
     
+    @IBOutlet weak var pugPhoto: UIImageView!
     
 }
