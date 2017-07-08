@@ -57,6 +57,7 @@ class PugMeAPI {
                             .filter{ $0.notEmpty }
                             .map(self.replaceHTTPwithHTTPS)
                             .map(self.stripNumber)
+                            .filter {$0.endsWith(suffix: ".jpg") }
                             .map{ URL(string: $0) }
                             .filter { $0 != nil }
                             .map { $0!}
@@ -121,5 +122,13 @@ fileprivate extension String {
     
     var notEmpty: Bool {
         return !isEmpty
+    }
+    
+    func endsWith(suffix: String) -> Bool {
+        return self.hasSuffix(suffix)
+    }
+    
+    func doesNotEndWith(suffix: String) -> Bool {
+        return !self.endsWith(suffix: suffix)
     }
 }

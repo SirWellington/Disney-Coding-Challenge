@@ -15,7 +15,7 @@ class PugCollectionViewController: UICollectionViewController {
     
     fileprivate let async: OperationQueue = {
         let queue = OperationQueue()
-        queue.maxConcurrentOperationCount = 3
+        queue.maxConcurrentOperationCount = 10
         return queue
     }()
     
@@ -123,11 +123,6 @@ extension PugCollectionViewController {
             
             self.main.addOperation {
                 
-                guard let collectionView = self.collectionView,
-                    collectionView.indexPathsForVisibleItems.contains(indexPath) else {
-                        return
-                }
-                
                 let animations = {
                     cell.pugPhoto.image = image
                 }
@@ -136,6 +131,18 @@ extension PugCollectionViewController {
             }
         }
     }
+}
+
+//MARK: Layouts
+extension PugCollectionViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let width: CGFloat = (self.view.frame.size.width / 2) - 10
+        return CGSize(width: width, height: width)
+
+    }
+    
 }
 
 //MARK: Extensions
