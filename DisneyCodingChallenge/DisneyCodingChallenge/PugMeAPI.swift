@@ -31,7 +31,7 @@ class PugMeAPI {
             }
             
             guard let data = data else {
-                LOG.error("Failed to retrieve data from URK: \(url)")
+                LOG.error("Failed to retrieve data from URL: \(url)")
                 endPrematurely()
                 return
             }
